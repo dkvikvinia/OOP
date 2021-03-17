@@ -1,0 +1,87 @@
+# #davaleba 2
+# class Calculator:
+#     def __init__(self, num1, num2):
+#         self.num1 = num1
+#         self.num2 = num2
+#
+#     def plus(self):
+#         return self.num1 + self.num2
+#
+#     def minus(self):
+#         return self.num2 - self.num1
+#
+#     def sub(self):
+#         return self.num2 / self.num1
+#
+#     def multiply(self):
+#         return self.num1 * self.num2
+#
+#
+# numbs = Calculator(4, 5)
+# print(numbs.plus(), numbs.minus(), numbs.sub(), numbs.multiply())
+
+
+# #davaleba 3
+# import csv
+#
+#
+# class Rectangle(object):
+#     def __init__(self, lenght, width):
+#         self.lenght = lenght
+#         self.width = width
+#
+#     def area(self):
+#         return self.width*self.lenght
+#
+#     def perimeter(self):
+#         return 2*(self.width+self.lenght)
+#
+#     def print_info(self):
+#         print("the perimeter is : ", self.perimeter())
+#         print(f"the lenght is {self.lenght}, the width is {self.width}")
+#         print(f"the area is : {self.area()} ", )
+#
+#
+# something = Rectangle(5, 4)
+# print(something.area(), something.perimeter())
+# something.print_info()
+
+
+# #davaleba 4
+# import csv
+# 
+# 
+# class Employee(object):
+#     def __init__(self, name, surname, age, salary):
+#         self.name = name
+#         self.salary = salary
+#         self.age = age
+#         self.surname = surname
+# 
+#     def __str__(self):
+#         return f"name {self.name} ,surname {self.surname} , age {self.age} , salary {self.salary}"
+# 
+#     def setName(self, name):
+#         self.name = name
+# 
+#     def setSurname(self, surname):
+#         self.surname = surname
+# 
+#     def setAge(self, age):
+#         self.age = age
+# 
+#     def setSalary(self, salary):
+#         self.salary = salary
+# 
+# 
+# EmployeeList = []
+# with open('david.csv') as csv_file:
+#     csv_reader = csv.reader(csv_file, delimiter=',')
+#     objects = []
+#     for j in csv_reader:
+#         emp = Employee(j[0], j[1], j[2], j[3])
+#         EmployeeList.append(emp)
+# for i in EmployeeList:
+#     print(i.__str__())
+# minimaluri = min([i.salary for i in EmployeeList])
+# print("minimaluri: :", minimaluri)
