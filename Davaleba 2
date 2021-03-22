@@ -1,0 +1,161 @@
+# import sys
+# class Book(object):
+#     def __init__(self, name, author, releaseYear, bookCount):
+#         self.__name = name
+#         self.__author = author
+#         self.__releaseYear = releaseYear
+#         self.__bookCount = bookCount
+#
+#     def info(self):
+#         return (f"name={self.__name} , author={self.__author} , "
+#                 f"release Year {self.__releaseYear} , Page amount {self.__bookCount}  ")
+#
+#     def setName(self, name):
+#         self.__name = name
+#
+#     def setauthor(self, author):
+#         self.__author = author
+#
+#     def setreleaseyear(self, year):
+#         self.__releaseYear = year
+#
+#     def bookcount(self, page):
+#         self.__bookCount = page
+#
+#     def getpagecount(self):
+#         return self.__bookCount
+#
+#     def getname(self):
+#         return self.__name
+#
+#     def getauthor(self):
+#         self.__author
+#
+#     def getreleaseyear(self):
+#         return self.__releaseYear
+#
+#
+# wigni = Book("Ai Ia", "Akaki Wereteli", "1905", "300")
+# print(wigni.info())
+
+
+##############################################
+# import sys
+# class Bankeri(list):
+#     def __init__(self, name, salary):
+#         self.name = name
+#         self.salary = salary
+#
+#     def min(x):
+#         listi = []
+#         for i in x:
+#             listi.append(i.salary)
+#         x = sys.maxsize
+#         for i in listi:
+#             if x > i:
+#                 x = i
+#
+#         return x
+#         # min it martivad sheidzleboda
+#
+#     def max(x):
+#         listi = []
+#         for i in x:
+#             listi.append(i.salary)
+#         x = 0
+#         for i in listi:
+#             if x < i:
+#                 x = i
+#         return x
+#
+#     def __str__(self):
+#         return "ello"
+#
+#
+# listi = []
+# listi.append(Bankeri("daviti1", 4400))
+#
+# listi.append(Bankeri("daviti2", 2131))
+#
+# listi.append(Bankeri("daviti3", 1000))
+#
+# listi.append(Bankeri("daviti4", 1220))
+# print(Bankeri.min(listi))
+# print(Bankeri.max(listi))
+
+
+#######################################################
+# class Animal(object):
+#     def __init__(self, name, age):
+#         self._name = name
+#         self._age = age
+#
+#     def getname(self):
+#         return self._name
+#
+#     def getage(self):
+#         return self._age
+#
+#     def setname(self, name):
+#         self._name = name
+#
+#     def setage(self, age):
+#         self._age = age
+#
+#     def info(self):
+#         return (f"name {self._name} , age {self._age}")
+#
+#
+# class dog(Animal):
+#     def __init__(self, x, y, jishi, feri):
+#         super().__init__(x, y)
+#         self.__jishi = jishi
+#         self.__feri = feri
+#
+#     def setjishi(self, jishi):
+#         self.__jishi = jishi
+#
+#     def setferi(self, feri):
+#         self.__feri = feri
+#
+#     def info(self):
+#         return (super().info() + f"jishi {self.__jishi} , feri {self.__feri}")
+#
+#
+# dog1 = dog("Belka", 10, "nagazi1", "witeli")
+# print(dog1.info())
+# dog2 = dog("Strelka", 1, "nagazi2", "ruxi")
+# print(dog2.info())
+
+###############################
+# import abc
+# from abc import ABC, abstractmethod
+#
+#
+# class CallMixin(ABC):
+#
+#     def calling(self):
+#         print("calling ya")
+#
+#     @abstractmethod
+#     def call(self):
+#         pass
+#
+#
+# class Person(CallMixin):
+#     def __init__(self, name, Iname, phone):
+#         self.fname = name
+#         self.Iname = Iname
+#         self.phone = phone
+#
+#     def call(self):
+#         print("i am calling")
+#         return "ring ring"
+#
+#     def calling(self):
+#         super().calling()
+#
+#
+# Person = Person("fname", "iname", 597232776)
+# Person.calling()
+# print(Person.call())
